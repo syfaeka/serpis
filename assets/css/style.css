@@ -1,39 +1,17 @@
-/* 
-* RepairPro - Electronics Repair Service Template
-* Version: 1.0
-*/
-
-/* ----------------------------------------------------------------
-   1. VARIABLES & RESET
----------------------------------------------------------------- */
 :root {
-    /* Colors */
     --primary-color: #0B2B26;
-    /* Deep Dark Green */
     --accent-color: #FFC107;
-    /* Golden Yellow */
     --body-bg: #FFFFFF;
-    /* Pure White */
     --text-color: #333333;
-    /* Dark Grey */
     --light-grey: #F8F9FA;
-    /* Light Background for sections */
     --border-color: #E9ECEF;
-    /* Light Border */
-
-    /* Typography */
     --font-main: 'Manrope', sans-serif;
-
-    /* Spacing */
     --section-padding: 80px 0;
     --transition: all 0.3s ease-in-out;
-
-    /* Shadows */
     --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     --hover-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
-/* Reset */
 *,
 *::before,
 *::after {
@@ -83,15 +61,10 @@ img {
     display: block;
 }
 
-/* ----------------------------------------------------------------
-   2. UTILITIES & COMPONENTS
----------------------------------------------------------------- */
-/* Section Padding */
 .section-padding {
     padding: var(--section-padding);
 }
 
-/* Buttons */
 .btn-primary {
     background-color: var(--primary-color);
     color: #fff;
@@ -124,7 +97,6 @@ img {
     color: var(--accent-color);
 }
 
-/* Section Title */
 .section-title {
     text-align: center;
     margin-bottom: 50px;
@@ -152,7 +124,6 @@ img {
     color: #666;
 }
 
-/* Preloader */
 #preloader {
     position: fixed;
     top: 0;
@@ -181,12 +152,6 @@ img {
     }
 }
 
-/* ----------------------------------------------------------------
-   3. HEADER & NAVBAR
----------------------------------------------------------------- */
-/* ----------------------------------------------------------------
-   3. HEADER & NAVBAR
----------------------------------------------------------------- */
 .navbar {
     padding: 15px 0;
     background-color: var(--body-bg);
@@ -225,7 +190,6 @@ img {
     box-shadow: none;
 }
 
-/* Sticky Header */
 .header-sticky {
     position: fixed;
     top: 0;
@@ -244,13 +208,16 @@ img {
     }
 }
 
-/* ----------------------------------------------------------------
-   4. HERO SECTION (Swiper)
----------------------------------------------------------------- */
 .hero-slider {
     height: 100vh;
     min-height: 600px;
     position: relative;
+}
+
+.hero-slider .swiper,
+.hero-slider .swiper-slide {
+    width: 100%;
+    height: 100% !important;
 }
 
 .hero-slider .swiper-slide {
@@ -267,7 +234,6 @@ img {
     width: 100%;
     height: 100%;
     background: rgba(11, 43, 38, 0.7);
-    /* Dark Overlay */
 }
 
 .hero-content {
@@ -279,7 +245,6 @@ img {
     justify-content: center;
     color: #fff;
     padding-top: 60px;
-    /* Offset for navbar */
     max-width: 800px;
 }
 
@@ -313,9 +278,6 @@ img {
     background: var(--accent-color);
 }
 
-/* ----------------------------------------------------------------
-   5. FOOTER
----------------------------------------------------------------- */
 .footer {
     background-color: var(--primary-color);
     color: #fff;
@@ -401,4 +363,151 @@ img {
 
 .scroll-top:hover {
     background: #fff;
+}
+
+.btn-primary,
+.btn-accent {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-primary::after,
+.btn-accent::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.btn-primary:hover::after,
+.btn-accent:hover::after {
+    width: 100%;
+}
+
+.btn-primary:hover,
+.btn-accent:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.hover-card {
+    transition: var(--transition);
+}
+
+.hover-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--hover-shadow) !important;
+}
+
+.timeline-dot {
+    box-shadow: 0 0 0 5px rgba(255, 193, 7, 0.2);
+}
+
+.testimonial-slider .card {
+    transition: var(--transition);
+}
+
+.testimonial-slider .card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow) !important;
+}
+
+.offcanvas {
+    background-color: #0B2B26 !important;
+    color: #ffffff !important;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.offcanvas-title {
+    color: #ffffff !important;
+}
+
+.offcanvas .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+    opacity: 1;
+}
+
+.offcanvas .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 1.1rem;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.offcanvas .nav-link:hover,
+.offcanvas .nav-link.active {
+    color: #FFC107 !important;
+    padding-left: 10px;
+}
+
+.offcanvas .dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: none;
+}
+
+.offcanvas,
+.offcanvas-lg,
+.offcanvas-md,
+.offcanvas-sm,
+.offcanvas-xl,
+.offcanvas-xxl,
+.offcanvas-header,
+.offcanvas-body {
+    background-color: #0B2B26 !important;
+    background: #0B2B26 !important;
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+.offcanvas.bg-light,
+.offcanvas.bg-white,
+.offcanvas-body.bg-light {
+    background-color: #0B2B26 !important;
+}
+
+.offcanvas-body .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 18px !important;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.offcanvas-body .nav-link:hover,
+.offcanvas-body .nav-link.active {
+    color: #FFC107 !important;
+    padding-left: 10px;
+    background: transparent !important;
+}
+
+.offcanvas .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: none !important;
+    margin-top: 0;
+}
+
+.offcanvas .dropdown-item {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.offcanvas .dropdown-item:hover {
+    background-color: transparent !important;
+    color: #FFC107 !important;
 }

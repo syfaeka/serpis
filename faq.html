@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ - RepairPro</title>
-    <!-- Fonts/CSS same as others -->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,23 +17,63 @@
     <div id="preloader">
         <div class="spinner"></div>
     </div>
-    <!-- Navbar (Simplified) -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index-slider.html">Repair<span>Pro</span><i
-                    class="fas fa-wrench ms-2 text-warning"></i></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"><span
-                    class="fas fa-bars"></span></button>
-            <div class="collapse navbar-collapse" id="navContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index-slider.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
+            <a class="navbar-brand" href="index-slider.html">
+                Repair<span>Pro</span><i class="fas fa-wrench ms-2"
+                    style="color: var(--accent-color); font-size: 0.8em;"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="fas fa-bars" style="font-size: 24px;"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index-slider.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                data-bs-toggle="dropdown">Pages</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="projects.html">Projects</a></li>
+                                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                                <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                                <li><a class="dropdown-item active" href="pricing.html">Pricing</a></li>
+                                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="404.html">404 Error</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="ms-lg-3 mt-3 mt-lg-0">
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
     <div class="page-header py-5 bg-light text-center">
         <div class="container">
             <h1 class="display-4 fw-bold">Frequently Asked Questions</h1>
@@ -42,13 +81,11 @@
         </div>
     </div>
 
-    <!-- FAQ Accordion -->
     <section class="section-padding">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="accordion" id="faqAccordion">
-                        <!-- Item 1 -->
                         <div class="accordion-item border-0 shadow-sm mb-3">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
@@ -65,7 +102,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Item 2 -->
                         <div class="accordion-item border-0 shadow-sm mb-3">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed fw-bold" type="button"
@@ -80,7 +116,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Item 3 -->
                         <div class="accordion-item border-0 shadow-sm mb-3">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed fw-bold" type="button"
@@ -96,7 +131,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Item 4 -->
                         <div class="accordion-item border-0 shadow-sm mb-3">
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed fw-bold" type="button"
@@ -117,7 +151,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer bg-dark text-white text-center py-4">
         <p class="mb-0">&copy; 2023 RepairPro. All Rights Reserved.</p>
     </footer>

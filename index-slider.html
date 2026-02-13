@@ -5,43 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RepairPro - Electronics Repair Service</title>
-
-    <!-- Google Fonts: Manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- FontAwesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
 
-    <!-- Preloader -->
     <div id="preloader">
         <div class="spinner"></div>
     </div>
 
-    <!-- Scroll To Top -->
     <button class="scroll-top">
         <i class="fas fa-chevron-up"></i>
     </button>
 
-    <!-- Topbar -->
     <div class="topbar py-2 bg-dark text-white d-none d-lg-block"
         style="background-color: var(--primary-color) !important; border-bottom: 1px solid rgba(255,255,255,0.1);">
         <div class="container">
@@ -68,7 +53,6 @@
         </div>
     </div>
 
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index-slider.html">
@@ -97,10 +81,22 @@
                             <a class="nav-link" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="projects.html">Projects</a>
+                            <a class="nav-link" href="blog.html">Blog</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Pages</a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="projects.html">Projects</a></li>
+                                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                                <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                                <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="404.html">404 Error</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
@@ -114,11 +110,9 @@
         </div>
     </nav>
 
-    <!-- Hero Section (Swiper) -->
     <section class="hero-slider">
         <div class="swiper">
             <div class="swiper-wrapper">
-                <!-- Slide 1 -->
                 <div class="swiper-slide"
                     style="background-image: url('https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=1920&q=80');">
                     <div class="container h-100">
@@ -140,7 +134,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Slide 2 -->
                 <div class="swiper-slide"
                     style="background-image: url('https://images.unsplash.com/photo-1588508065123-287b28e013da?auto=format&fit=crop&w=1920&q=80');">
                     <div class="container h-100">
@@ -159,116 +152,347 @@
                         </div>
                     </div>
                 </div>
-                <!-- Slide 3 -->
-                <div class="swiper-slide"
-                    style="background-image: url('https://images.unsplash.com/photo-1517430816045-df4b7de8db2b?auto=format&fit=crop&w=1920&q=80');">
-                    <div class="container h-100">
-                        <div class="row h-100 align-items-center">
-                            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-                                <div class="hero-content">
-                                    <h5>24/7 Support</h5>
-                                    <h1>Technical Support You Can Trust</h1>
-                                    <p>Encountering software issues? Our team is ready to help you troubleshoot and
-                                        resolve any technical problems.</p>
-                                    <div>
-                                        <a href="contact.html" class="btn btn-accent me-3">Support Center</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <!-- Pagination & Navigation -->
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next d-none d-md-block"></div>
             <div class="swiper-button-prev d-none d-md-block"></div>
         </div>
     </section>
 
-    <!-- Features Section -->
+    <section class="py-4 bg-light border-bottom">
+        <div class="container">
+            <div class="row align-items-center text-center text-lg-start">
+                <div class="col-lg-3 mb-3 mb-lg-0" data-aos="fade-right">
+                    <h6 class="fw-bold mb-0 text-uppercase letter-spacing-1">We Repair All Major Brands:</h6>
+                </div>
+                <div class="col-lg-9" data-aos="fade-left">
+                    <div
+                        class="d-flex justify-content-center justify-content-lg-between align-items-center flex-wrap opacity-50">
+                        <i class="fab fa-apple fa-2x mx-3 my-2" title="Apple"></i>
+                        <i class="fab fa-android fa-2x mx-3 my-2" title="Android"></i>
+                        <i class="fab fa-windows fa-2x mx-3 my-2" title="Windows"></i>
+                        <i class="fab fa-google fa-2x mx-3 my-2" title="Google"></i>
+                        <i class="fab fa-amazon fa-2x mx-3 my-2" title="Amazon"></i>
+                        <i class="fab fa-playstation fa-2x mx-3 my-2" title="Sony"></i>
+                        <i class="fab fa-xbox fa-2x mx-3 my-2" title="Microsoft"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="position-relative pe-lg-5">
+                        <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a783?auto=format&fit=crop&w=800&q=80"
+                            class="img-fluid rounded-4 shadow-lg" alt="About RepairPro">
+                        <div
+                            class="position-absolute bottom-0 start-0 bg-white p-4 rounded shadow-lg m-4 border-start border-5 border-warning d-none d-md-block">
+                            <h2 class="display-4 fw-bold text-primary mb-0">15+</h2>
+                            <p class="mb-0 fw-bold text-uppercase small">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <span class="text-warning text-uppercase fw-bold">Who We Are</span>
+                    <h2 class="display-5 fw-bold mb-4">Welcome to RepairPro</h2>
+                    <p class="text-muted mb-4 lead">We are a leading electronics repair service dedicated to bringing
+                        your devices back to life. Our team of certified technicians uses state-of-the-art diagnostic
+                        tools to identify and fix issues quickly and efficiently.</p>
+                    <p class="text-muted mb-4">Since our inception, we have repaired over 15,000 devices, saving tons of
+                        e-waste from landfills. We believe in repair over replace.</p>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i>Certified
+                                    Technicians</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i>Same Day Service
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i>100% Data Security
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i>90-Day Warranty
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="section-padding bg-light">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card h-100 border-0 shadow-sm p-4 text-center hover-card">
-                        <div class="mb-3 text-warning">
-                            <i class="fas fa-shipping-fast fa-3x"></i>
-                        </div>
-                        <h4>Fast Repair</h4>
-                        <p class="text-muted">Most repairs are completed within 24 hours. We value your time.</p>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card h-100 border-0 shadow-sm p-4 text-center hover-card">
-                        <div class="mb-3 text-warning">
-                            <i class="fas fa-shield-alt fa-3x"></i>
-                        </div>
-                        <h4>90-Day Warranty</h4>
-                        <p class="text-muted">We stand by our work. All repairs come with a comprehensive warranty.</p>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card h-100 border-0 shadow-sm p-4 text-center hover-card">
-                        <div class="mb-3 text-warning">
-                            <i class="fas fa-user-cog fa-3x"></i>
-                        </div>
-                        <h4>Expert Technicians</h4>
-                        <p class="text-muted">Our team is certified and experienced in handling all major brands.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Overview -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <span>What We Do</span>
-                <h2>Our Premium Services</h2>
-                <p>We offer a wide range of repair and maintenance services for all your electronic devices.</p>
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="text-warning text-uppercase fw-bold">Our Expertise</span>
+                <h2 class="display-5 fw-bold">Comprehensive Repair Services</h2>
             </div>
             <div class="row g-4">
-                <!-- Service 1 -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card border-0 shadow-sm h-100">
-                        <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=800&q=80"
-                            class="card-img-top" alt="Smartphone Repair" style="height: 250px; object-fit: cover;">
-                        <div class="card-body p-4">
-                            <h4 class="card-title">Smartphone Repair</h4>
-                            <p class="card-text text-muted">Screen replacement, battery replacement, water damage
-                                repair, and more for iPhone and Android.</p>
-                            <a href="services.html" class="text-decoration-none fw-bold">Read More <i
-                                    class="fas fa-arrow-right ms-1"></i></a>
+                    <div class="card h-100 border-0 shadow-sm p-4 hover-card text-center text-md-start">
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-3">
+                            <div class="icon-box bg-white p-3 rounded-circle shadow-sm text-primary">
+                                <i class="fas fa-mobile-alt fa-2x"></i>
+                            </div>
+                            <h4 class="fw-bold ms-3 mb-0">Smartphone Repair</h4>
                         </div>
+                        <p class="text-muted">Screen replacement, battery replacement, water damage repair, and camera
+                            fixes for iPhone, Samsung, and Pixel.</p>
                     </div>
                 </div>
-                <!-- Service 2 -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card border-0 shadow-sm h-100">
-                        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=800&q=80"
-                            class="card-img-top" alt="Laptop Repair" style="height: 250px; object-fit: cover;">
-                        <div class="card-body p-4">
-                            <h4 class="card-title">Laptop & Computer</h4>
-                            <p class="card-text text-muted">Hardware diagnostics, virus removal, OS installation, and
-                                hardware upgrades.</p>
-                            <a href="services.html" class="text-decoration-none fw-bold">Read More <i
-                                    class="fas fa-arrow-right ms-1"></i></a>
+                    <div class="card h-100 border-0 shadow-sm p-4 hover-card text-center text-md-start">
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-3">
+                            <div class="icon-box bg-white p-3 rounded-circle shadow-sm text-primary">
+                                <i class="fas fa-laptop fa-2x"></i>
+                            </div>
+                            <h4 class="fw-bold ms-3 mb-0">Laptop Repair</h4>
+                        </div>
+                        <p class="text-muted">Hardware diagnostics, screen repairs, keyboard replacement, and
+                            motherboard fixes for MacBook and Windows laptops.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm p-4 hover-card text-center text-md-start">
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-3">
+                            <div class="icon-box bg-white p-3 rounded-circle shadow-sm text-primary">
+                                <i class="fas fa-desktop fa-2x"></i>
+                            </div>
+                            <h4 class="fw-bold ms-3 mb-0">PC Build & Upgrade</h4>
+                        </div>
+                        <p class="text-muted">Custom gaming PC builds, workstation assembly, RAM upgrades, SSD
+                            installation, and thermal paste application.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 border-0 shadow-sm p-4 hover-card text-center text-md-start">
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-3">
+                            <div class="icon-box bg-white p-3 rounded-circle shadow-sm text-primary">
+                                <i class="fas fa-gamepad fa-2x"></i>
+                            </div>
+                            <h4 class="fw-bold ms-3 mb-0">Console Repair</h4>
+                        </div>
+                        <p class="text-muted">HDMI port repair, disk drive replacement, and overheating fixes for
+                            PlayStation 5, Xbox Series X, and Nintendo Switch.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card h-100 border-0 shadow-sm p-4 hover-card text-center text-md-start">
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-3">
+                            <div class="icon-box bg-white p-3 rounded-circle shadow-sm text-primary">
+                                <i class="fas fa-clock fa-2x"></i>
+                            </div>
+                            <h4 class="fw-bold ms-3 mb-0">Smartwatch Repair</h4>
+                        </div>
+                        <p class="text-muted">Glass replacement, battery swap, and sensor diagnostic for Apple Watch,
+                            Galaxy Watch, and Garmin devices.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card h-100 border-0 shadow-sm p-4 hover-card text-center text-md-start">
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-3">
+                            <div class="icon-box bg-white p-3 rounded-circle shadow-sm text-primary">
+                                <i class="fas fa-database fa-2x"></i>
+                            </div>
+                            <h4 class="fw-bold ms-3 mb-0">Data Recovery</h4>
+                        </div>
+                        <p class="text-muted">Professional data recovery from damaged hard drives, SSDs, USB drives, and
+                            memory cards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <span class="text-warning text-uppercase fw-bold">Process</span>
+                <h2 class="display-5 fw-bold">How It Works</h2>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up">
+                    <div class="position-relative">
+                        <div class="icon-box bg-light rounded-circle mx-auto d-flex align-items-center justify-content-center mb-4"
+                            style="width: 100px; height: 100px;">
+                            <i class="fas fa-laptop-medical fa-2x text-primary"></i>
+                        </div>
+                        <span
+                            class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-warning border border-light"
+                            style="width: 30px; height: 30px; line-height: 20px;">1</span>
+                        <h4>Book Online</h4>
+                        <p class="text-muted">Schedule your repair via our website or call us directly for a quote.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="position-relative">
+                        <div class="icon-box bg-light rounded-circle mx-auto d-flex align-items-center justify-content-center mb-4"
+                            style="width: 100px; height: 100px;">
+                            <i class="fas fa-box-open fa-2x text-primary"></i>
+                        </div>
+                        <span
+                            class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-warning border border-light"
+                            style="width: 30px; height: 30px; line-height: 20px;">2</span>
+                        <h4>Drop or Mail</h4>
+                        <p class="text-muted">Bring your device to our store or use our free mail-in service from
+                            anywhere.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="position-relative">
+                        <div class="icon-box bg-light rounded-circle mx-auto d-flex align-items-center justify-content-center mb-4"
+                            style="width: 100px; height: 100px;">
+                            <i class="fas fa-tools fa-2x text-primary"></i>
+                        </div>
+                        <span
+                            class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-warning border border-light"
+                            style="width: 30px; height: 30px; line-height: 20px;">3</span>
+                        <h4>Expert Repair</h4>
+                        <p class="text-muted">Our certified technicians fix your device using high-quality original
+                            parts.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="position-relative">
+                        <div class="icon-box bg-light rounded-circle mx-auto d-flex align-items-center justify-content-center mb-4"
+                            style="width: 100px; height: 100px;">
+                            <i class="fas fa-smile-beam fa-2x text-primary"></i>
+                        </div>
+                        <span
+                            class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-warning border border-light"
+                            style="width: 30px; height: 30px; line-height: 20px;">4</span>
+                        <h4>Receive Device</h4>
+                        <p class="text-muted">Get your fully functional device back, often within the same day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-dark text-white position-relative"
+        style="background-image: url('https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=1920&q=80'); background-attachment: fixed; background-size: cover; background-position: center;">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.85;"></div>
+        <div class="container position-relative z-2">
+            <div class="row g-4 text-center">
+                <div class="col-md-3 col-6" data-aos="fade-up">
+                    <h2 class="display-4 fw-bold text-warning mb-0">15k+</h2>
+                    <p class="mb-0 opacity-75 text-uppercase letter-spacing-1">Repairs Done</p>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="display-4 fw-bold text-warning mb-0">50+</h2>
+                    <p class="mb-0 opacity-75 text-uppercase letter-spacing-1">Expert Techs</p>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="display-4 fw-bold text-warning mb-0">100%</h2>
+                    <p class="mb-0 opacity-75 text-uppercase letter-spacing-1">Satisfaction</p>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
+                    <h2 class="display-4 fw-bold text-warning mb-0">12</h2>
+                    <p class="mb-0 opacity-75 text-uppercase letter-spacing-1">Years Running</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <span class="text-warning text-uppercase fw-bold">Why Choose Us</span>
+                    <h2 class="display-5 fw-bold mb-4">We are the Repair Experts</h2>
+                    <p class="text-muted mb-4">We understand how important your devices are to you. That's why we offer
+                        fast, reliable, and affordable repair services backed by our satisfaction guarantee.</p>
+
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="flex-shrink-0">
+                            <span class="d-inline-block rounded-circle bg-light p-3 text-primary">
+                                <i class="fas fa-tags fa-lg"></i>
+                            </span>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5 class="fw-bold">Best Price Guarantee</h5>
+                            <p class="text-muted small">We match local competitors' prices to ensure you get the best
+                                deal.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="flex-shrink-0">
+                            <span class="d-inline-block rounded-circle bg-light p-3 text-primary">
+                                <i class="fas fa-shipping-fast fa-lg"></i>
+                            </span>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5 class="fw-bold">Fast Turnaround</h5>
+                            <p class="text-muted small">Most repairs are completed within 60 minutes or same-day.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="flex-shrink-0">
+                            <span class="d-inline-block rounded-circle bg-light p-3 text-primary">
+                                <i class="fas fa-shield-alt fa-lg"></i>
+                            </span>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5 class="fw-bold">Quality Parts</h5>
+                            <p class="text-muted small">We only use high-quality, original-grade parts for all repairs.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <!-- Service 3 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card border-0 shadow-sm h-100">
-                        <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=800&q=80"
-                            class="card-img-top" alt="Console Repair" style="height: 250px; object-fit: cover;">
-                        <div class="card-body p-4">
-                            <h4 class="card-title">Console Repair</h4>
-                            <p class="card-text text-muted">Fixing overheating, HDMI port issues, and drive problems for
-                                PlayStation, Xbox, and Switch.</p>
-                            <a href="services.html" class="text-decoration-none fw-bold">Read More <i
-                                    class="fas fa-arrow-right ms-1"></i></a>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <span class="text-warning text-uppercase fw-bold">FAQ</span>
+                    <h2 class="display-5 fw-bold mb-4">Common Questions</h2>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne">
+                                    How long does a repair take?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Most smartphone repairs like screen and battery replacements take about 45-60
+                                    minutes. Complex tablet or laptop repairs may take 24-48 hours.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    Do you offer a warranty?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Yes! We offer a 90-day warranty on all parts and labor. If the issue persists
+                                    (unrelated to physical damage), we will fix it for free.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    Will I lose my data?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    In most repairs, your data is safe. However, we always recommend backing up your
+                                    device before bringing it in, just in case of unforeseen software issues.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -276,17 +500,143 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="section-padding bg-dark text-white text-center"
-        style="background-color: var(--primary-color) !important; background-image: url('assets/images/pattern.png');">
-        <div class="container" data-aos="zoom-in">
-            <h2 class="text-white mb-3">Broken Device? We Can Fix It!</h2>
-            <p class="lead mb-4 opacity-75">Get a free quote today and bring your device back to life.</p>
-            <a href="contact.html" class="btn btn-accent btn-lg">Get Free Quote</a>
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <span class="text-warning text-uppercase fw-bold">Testimonials</span>
+                <h2 class="display-5 fw-bold">Happy Customers</h2>
+            </div>
+            <div class="swiper testimonial-slider" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card border-0 shadow-sm p-4 text-center mx-3 my-2 h-100">
+                            <div class="mb-4">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="lead text-muted fst-italic mb-4">"Saved my life! My MacBook wouldn't turn on
+                                before a big presentation. They fixed it in 3 hours."</p>
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
+                                alt="Client" class="rounded-circle mb-3" width="80" height="80">
+                            <h5 class="fw-bold">Michael Brown</h5>
+                            <p class="text-muted small mb-0">Architect</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card border-0 shadow-sm p-4 text-center mx-3 my-2 h-100">
+                            <div class="mb-4">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="lead text-muted fst-italic mb-4">"Best repair shop in town. Honest pricing and
+                                they actually explained what was wrong."</p>
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+                                alt="Client" class="rounded-circle mb-3" width="80" height="80">
+                            <h5 class="fw-bold">Sarah Connor</h5>
+                            <p class="text-muted small mb-0">Student</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card border-0 shadow-sm p-4 text-center mx-3 my-2 h-100">
+                            <div class="mb-4">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                            </div>
+                            <p class="lead text-muted fst-italic mb-4">"Their data recovery service is magic. I thought
+                                I lost all my wedding photos."</p>
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80"
+                                alt="Client" class="rounded-circle mb-3" width="80" height="80">
+                            <h5 class="fw-bold">David Wilson</h5>
+                            <p class="text-muted small mb-0">Photographer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination position-relative mt-5"></div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <span class="text-warning text-uppercase fw-bold">Latest News</span>
+                <h2 class="display-5 fw-bold">Tech Insights</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="card h-100 border-0 shadow-sm hover-card">
+                        <img src="https://images.unsplash.com/photo-1512314889357-e157c22f938d?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Blog 1" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <div class="mb-2">
+                                <span class="badge bg-light text-primary me-2">Tips</span>
+                                <small class="text-muted">Oct 15, 2023</small>
+                            </div>
+                            <h5 class="card-title fw-bold">How to Extend Battery Life</h5>
+                            <p class="card-text text-muted">Simple hacks to make your smartphone battery last all day
+                                long.</p>
+                            <a href="blog.html" class="text-primary fw-bold text-decoration-none">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm hover-card">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Blog 2" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <div class="mb-2">
+                                <span class="badge bg-light text-primary me-2">Cybersecurity</span>
+                                <small class="text-muted">Oct 10, 2023</small>
+                            </div>
+                            <h5 class="card-title fw-bold">Protecting Your Digital Life</h5>
+                            <p class="card-text text-muted">Why strong passwords and 2FA are essential in 2023.</p>
+                            <a href="blog.html" class="text-primary fw-bold text-decoration-none">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm hover-card">
+                        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Blog 3" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <div class="mb-2">
+                                <span class="badge bg-light text-primary me-2">Hardware</span>
+                                <small class="text-muted">Oct 05, 2023</small>
+                            </div>
+                            <h5 class="card-title fw-bold">When to Upgrade Your PC</h5>
+                            <p class="card-text text-muted">Signs that it's time to replace your old computer with a new
+                                one.</p>
+                            <a href="blog.html" class="text-primary fw-bold text-decoration-none">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-primary text-white text-center">
+        <div class="container" data-aos="zoom-in">
+            <h2 class="display-5 fw-bold mb-4">Broken Device? We Can Fix It Today!</h2>
+            <p class="lead mb-5 opacity-75">Don't let a broken screen or slow computer ruin your day. Call us now or
+                book online.</p>
+            <div>
+                <a href="contact.html" class="btn btn-warning btn-lg me-3 text-dark fw-bold px-5 py-3">Book
+                    Appointment</a>
+                <a href="tel:+11234567890" class="btn btn-outline-light btn-lg px-5 py-3"><i
+                        class="fas fa-phone me-2"></i> +1 (123) 456-7890</a>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
             <div class="row g-4">
@@ -359,11 +709,32 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        var testimonialSwiper = new Swiper(".testimonial-slider", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+            },
+            autoplay: {
+                delay: 5000,
+            },
+        });
+    </script>
 </body>
 
 </html>

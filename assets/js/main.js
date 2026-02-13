@@ -1,14 +1,6 @@
-/**
- * RepairPro - Electronics Repair Service Template
- * Main JS File (Vanilla JS Version)
- */
-
 (function () {
     "use strict";
 
-    /**
-     * Preloader
-     */
     const preloader = document.querySelector('#preloader');
     if (preloader) {
         window.addEventListener('load', () => {
@@ -22,9 +14,6 @@
         });
     }
 
-    /**
-     * Sticky Header & Scroll Top
-     */
     const selectHeader = document.querySelector('.navbar');
     const scrollTop = document.querySelector('.scroll-top');
 
@@ -38,7 +27,6 @@
         });
     }
 
-    /* Scroll Top Button Logic */
     if (scrollTop) {
         const toggleScrollTop = () => {
             if (window.scrollY > 100) {
@@ -60,9 +48,6 @@
         });
     }
 
-    /**
-     * Animation on scroll function and init
-     */
     function aosInit() {
         if (typeof AOS !== 'undefined') {
             AOS.init({
@@ -74,9 +59,6 @@
     }
     window.addEventListener('load', aosInit);
 
-    /**
-     * Hero Swiper
-     */
     const heroSwiperElement = document.querySelector('.hero-slider .swiper');
     if (heroSwiperElement && typeof Swiper !== 'undefined') {
         new Swiper(heroSwiperElement, {
