@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RepairPro - Electronics Repair Service</title>
+
+    <!-- Google Fonts: Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Scroll To Top -->
+    <button class="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Topbar -->
+    <div class="topbar py-2 bg-dark text-white d-none d-lg-block"
+        style="background-color: var(--primary-color) !important; border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-inline m-0">
+                        <li class="list-inline-item me-3"><i
+                                class="fas fa-envelope text-warning me-2"></i>info@repairpro.com</li>
+                        <li class="list-inline-item"><i class="fas fa-phone text-warning me-2"></i>+1 (123) 456-7890
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-end">
+                    <ul class="list-inline m-0 social-links">
+                        <li class="list-inline-item"><a href="#" class="text-white"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item ms-3"><a href="#" class="text-white"><i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item ms-3"><a href="#" class="text-white"><i
+                                    class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index-slider.html">
+                Repair<span>Pro</span><i class="fas fa-wrench ms-2"
+                    style="color: var(--accent-color); font-size: 0.8em;"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="fas fa-bars" style="font-size: 24px;"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index-slider.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="ms-lg-3 mt-3 mt-lg-0">
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Swiper) -->
+    <section class="hero-slider">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide"
+                    style="background-image: url('https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=1920&q=80');">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                                <div class="hero-content">
+                                    <h5>Fast & Reliable</h5>
+                                    <h1>Expert Repairs for your Electronics</h1>
+                                    <p>We provide top-notch repair services for mobile phones, laptops, and more.
+                                        Certified technicians and quality parts guaranteed.</p>
+                                    <div>
+                                        <a href="services.html" class="btn btn-accent me-3">Our Services</a>
+                                        <a href="contact.html" class="btn btn-outline-light"
+                                            style="border: 2px solid #fff; padding: 12px 30px; border-radius: 5px; font-weight: 600; color: #fff; text-decoration: none;">Contact
+                                            Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide"
+                    style="background-image: url('https://images.unsplash.com/photo-1588508065123-287b28e013da?auto=format&fit=crop&w=1920&q=80');">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                                <div class="hero-content">
+                                    <h5>Upgrade Your Gear</h5>
+                                    <h1>Custom PC Builds & Upgrades</h1>
+                                    <p>Experience peak performance with our custom builds and hardware upgrades. Unleash
+                                        the full potential of your device.</p>
+                                    <div>
+                                        <a href="contact.html" class="btn btn-accent me-3">Get Started</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide"
+                    style="background-image: url('https://images.unsplash.com/photo-1517430816045-df4b7de8db2b?auto=format&fit=crop&w=1920&q=80');">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                                <div class="hero-content">
+                                    <h5>24/7 Support</h5>
+                                    <h1>Technical Support You Can Trust</h1>
+                                    <p>Encountering software issues? Our team is ready to help you troubleshoot and
+                                        resolve any technical problems.</p>
+                                    <div>
+                                        <a href="contact.html" class="btn btn-accent me-3">Support Center</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination & Navigation -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next d-none d-md-block"></div>
+            <div class="swiper-button-prev d-none d-md-block"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center hover-card">
+                        <div class="mb-3 text-warning">
+                            <i class="fas fa-shipping-fast fa-3x"></i>
+                        </div>
+                        <h4>Fast Repair</h4>
+                        <p class="text-muted">Most repairs are completed within 24 hours. We value your time.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center hover-card">
+                        <div class="mb-3 text-warning">
+                            <i class="fas fa-shield-alt fa-3x"></i>
+                        </div>
+                        <h4>90-Day Warranty</h4>
+                        <p class="text-muted">We stand by our work. All repairs come with a comprehensive warranty.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center hover-card">
+                        <div class="mb-3 text-warning">
+                            <i class="fas fa-user-cog fa-3x"></i>
+                        </div>
+                        <h4>Expert Technicians</h4>
+                        <p class="text-muted">Our team is certified and experienced in handling all major brands.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <span>What We Do</span>
+                <h2>Our Premium Services</h2>
+                <p>We offer a wide range of repair and maintenance services for all your electronic devices.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Smartphone Repair" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">Smartphone Repair</h4>
+                            <p class="card-text text-muted">Screen replacement, battery replacement, water damage
+                                repair, and more for iPhone and Android.</p>
+                            <a href="services.html" class="text-decoration-none fw-bold">Read More <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Laptop Repair" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">Laptop & Computer</h4>
+                            <p class="card-text text-muted">Hardware diagnostics, virus removal, OS installation, and
+                                hardware upgrades.</p>
+                            <a href="services.html" class="text-decoration-none fw-bold">Read More <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Console Repair" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">Console Repair</h4>
+                            <p class="card-text text-muted">Fixing overheating, HDMI port issues, and drive problems for
+                                PlayStation, Xbox, and Switch.</p>
+                            <a href="services.html" class="text-decoration-none fw-bold">Read More <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-dark text-white text-center"
+        style="background-color: var(--primary-color) !important; background-image: url('assets/images/pattern.png');">
+        <div class="container" data-aos="zoom-in">
+            <h2 class="text-white mb-3">Broken Device? We Can Fix It!</h2>
+            <p class="lead mb-4 opacity-75">Get a free quote today and bring your device back to life.</p>
+            <a href="contact.html" class="btn btn-accent btn-lg">Get Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <a href="index-slider.html" class="navbar-brand text-white d-block mb-4"
+                            style="font-size: 28px;">
+                            Repair<span>Pro</span><i class="fas fa-wrench ms-2 text-warning"></i>
+                        </a>
+                        <p class="text-white-50">Your trusted partner for electronic repairs. We bring life back to your
+                            devices with expert care and quality parts.</p>
+                        <div class="mt-4">
+                            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h4>Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Phone Repair</a></li>
+                            <li><a href="#">Laptop Repair</a></li>
+                            <li><a href="#">PC Build</a></li>
+                            <li><a href="#">Data Recovery</a></li>
+                            <li><a href="#">Console Repair</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h4>Contact Us</h4>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley, CA 94000</li>
+                            <li><i class="fas fa-phone"></i> +1 (123) 456-7890</li>
+                            <li><i class="fas fa-envelope"></i> info@repairpro.com</li>
+                            <li><i class="fas fa-clock"></i> Mon - Sat: 9:00 AM - 8:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">&copy; 2023 RepairPro. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item"><a href="#" class="text-white-50">Privacy Policy</a></li>
+                            <li class="list-inline-item ms-3"><a href="#" class="text-white-50">Terms of Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

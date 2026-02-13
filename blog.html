@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - RepairPro</title>
+    <!-- Fonts/CSS same as others -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    <!-- Navbar (Simplified) -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index-slider.html">Repair<span>Pro</span><i
+                    class="fas fa-wrench ms-2 text-warning"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"><span
+                    class="fas fa-bars"></span></button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index-slider.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header py-5 bg-light text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Latest News</h1>
+            <p class="lead text-muted">Updates, tips, and tricks from our experts</p>
+        </div>
+    </div>
+
+    <!-- Blog Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Blog Item 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden hover-card">
+                        <img src="https://images.unsplash.com/photo-1544654563-71a396e95c47?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Blog" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <div class="mb-2 text-muted small"><i class="far fa-calendar-alt me-2"></i> Oct 15, 2023
+                            </div>
+                            <h4 class="card-title"><a href="blog-details.html" class="text-dark text-decoration-none">5
+                                    Signs Your Battery Needs Replacement</a></h4>
+                            <p class="card-text text-muted">Is your phone dying too fast? Check out these common
+                                symptoms of a failing battery...</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-4 ps-4">
+                            <a href="blog-details.html" class="text-primary fw-bold text-decoration-none">Read More <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Item 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden hover-card">
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Blog" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <div class="mb-2 text-muted small"><i class="far fa-calendar-alt me-2"></i> Oct 12, 2023
+                            </div>
+                            <h4 class="card-title"><a href="blog-details.html"
+                                    class="text-dark text-decoration-none">How to Keep Your Laptop Fast</a></h4>
+                            <p class="card-text text-muted">Simple maintenance tips to improved the performance and
+                                longevity of your laptop...</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-4 ps-4">
+                            <a href="blog-details.html" class="text-primary fw-bold text-decoration-none">Read More <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Item 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden hover-card">
+                        <img src="https://images.unsplash.com/photo-1588702547910-4b87f71d3711?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Blog" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <div class="mb-2 text-muted small"><i class="far fa-calendar-alt me-2"></i> Oct 08, 2023
+                            </div>
+                            <h4 class="card-title"><a href="blog-details.html"
+                                    class="text-dark text-decoration-none">Why Data Backup is Essential</a></h4>
+                            <p class="card-text text-muted">Don't wait for a crash to save your data. Learn why regular
+                                backups are crucial...</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-4 ps-4">
+                            <a href="blog-details.html" class="text-primary fw-bold text-decoration-none">Read More <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="row mt-5">
+                <div class="col-12 d-flex justify-content-center">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center py-4">
+        <p class="mb-0">&copy; 2023 RepairPro. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

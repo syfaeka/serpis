@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - RepairPro</title>
+    <!-- Fonts/CSS same as others -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    <!-- Navbar (Simplified) -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index-slider.html">Repair<span>Pro</span><i
+                    class="fas fa-wrench ms-2 text-warning"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"><span
+                    class="fas fa-bars"></span></button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index-slider.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header py-5 bg-light text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Contact Us</h1>
+            <p class="lead text-muted">Get in touch for repairs and support</p>
+        </div>
+    </div>
+
+    <!-- Contact Info -->
+    <section class="section-padding pb-0">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center">
+                        <i class="fas fa-map-marker-alt fa-2x text-warning mb-3"></i>
+                        <h4>Address</h4>
+                        <p class="text-muted">123 Tech Street, Silicon Valley, CA</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center">
+                        <i class="fas fa-phone fa-2x text-warning mb-3"></i>
+                        <h4>Phone</h4>
+                        <p class="text-muted">+1 (123) 456-7890</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center">
+                        <i class="fas fa-envelope fa-2x text-warning mb-3"></i>
+                        <h4>Email</h4>
+                        <p class="text-muted">info@repairpro.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Form -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198059.4600033481!2d-84.390185!3d33.748995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5045d6993098d%3A0x66fede2f990b630b!2sAtlanta%2C%20GA!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                        width="100%" height="100%" style="border:0; min-height: 500px;" allowfullscreen=""
+                        loading="lazy"></iframe>
+                </div>
+                <div class="col-lg-6 bg-white p-5" data-aos="fade-left">
+                    <h3 class="mb-4">Send Us a Message</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Your Name</label>
+                            <input type="text" class="form-control" placeholder="John Doe">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="john@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Subject</label>
+                            <input type="text" class="form-control" placeholder="Repair Inquiry">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="5" placeholder="Describe your issue..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center py-4">
+        <p class="mb-0">&copy; 2023 RepairPro. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

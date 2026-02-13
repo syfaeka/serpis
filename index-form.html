@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RepairPro - Electronics Repair Service</title>
+
+    <!-- Google Fonts: Manrope -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- Preloader & Scroll Top (Same as others) -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    <button class="scroll-top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Topbar & Navbar (Same as others) -->
+    <!-- ... (Standard Header Block) ... -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index-slider.html">
+                Repair<span>Pro</span><i class="fas fa-wrench ms-2"
+                    style="color: var(--accent-color); font-size: 0.8em;"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="fas fa-bars" style="font-size: 24px;"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index-slider.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="ms-lg-3 mt-3 mt-lg-0">
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Form) -->
+    <section class="hero-form d-flex align-items-center"
+        style="background: linear-gradient(rgba(11, 43, 38, 0.8), rgba(11, 43, 38, 0.8)), url('https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=1920&q=80') center/cover; min-height: 100vh; padding: 120px 0;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-white mb-5 mb-lg-0" data-aos="fade-right">
+                    <h5 class="text-warning text-uppercase letter-spacing-2 mb-3">Quick & Easy</h5>
+                    <h1 class="display-3 fw-bold mb-4">Book Your Repair <span class="text-warning">Instantly</span></h1>
+                    <p class="lead mb-4 opacity-75">Don't wait in line. Schedule your repair service online and get
+                        priority handling for your devices.</p>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-3 d-flex align-items-center"><i
+                                class="fas fa-check-circle text-warning me-3 fa-lg"></i> Free Diagnostics</li>
+                        <li class="mb-3 d-flex align-items-center"><i
+                                class="fas fa-check-circle text-warning me-3 fa-lg"></i> Instant Quote</li>
+                        <li class="d-flex align-items-center"><i
+                                class="fas fa-check-circle text-warning me-3 fa-lg"></i> Priority Service</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 offset-lg-1" data-aos="fade-left" data-aos-delay="200">
+                    <div class="card border-0 shadow-lg p-4 p-md-5 rounded-4">
+                        <h3 class="fw-bold mb-4 text-dark text-center">Quick Booking</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label text-muted small fw-bold">Device Type</label>
+                                <select class="form-select border-2" style="height: 50px;">
+                                    <option selected>Select Device</option>
+                                    <option value="phone">Smartphone</option>
+                                    <option value="laptop">Laptop / PC</option>
+                                    <option value="tablet">Tablet</option>
+                                    <option value="console">Console</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label text-muted small fw-bold">Issue Description</label>
+                                <input type="text" class="form-control border-2" placeholder="e.g. Broken Screen"
+                                    style="height: 50px;">
+                            </div>
+                            <div class="row">
+                                <div class="col-6 mb-3">
+                                    <label class="form-label text-muted small fw-bold">Your Name</label>
+                                    <input type="text" class="form-control border-2" placeholder="John Doe"
+                                        style="height: 50px;">
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <label class="form-label text-muted small fw-bold">Phone Number</label>
+                                    <input type="tel" class="form-control border-2" placeholder="+123..."
+                                        style="height: 50px;">
+                                </div>
+                            </div>
+                            <div class="d-grid mt-2">
+                                <button type="submit" class="btn btn-primary btn-lg">Book Appointment</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

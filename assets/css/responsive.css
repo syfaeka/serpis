@@ -1,0 +1,126 @@
+/* =========================================
+   Responsive CSS
+   ========================================= */
+
+/* --- Tablet and Mobile (Below 992px) --- */
+@media (max-width: 991.98px) {
+
+    /* Typography */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    /* Navbar */
+    .navbar-collapse {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        margin-top: 15px;
+    }
+
+    /* Hero Section */
+    .hero-slider .swiper-slide {
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* Sections */
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    /* Sidebar */
+    .sticky-lg-top {
+        position: static;
+        margin-bottom: 40px;
+    }
+}
+
+/* --- Mobile Only (Below 768px) --- */
+@media (max-width: 767.98px) {
+
+    /* Typography */
+    h1 {
+        font-size: 2rem;
+    }
+
+    .display-1 {
+        font-size: 4rem;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    /* Hero */
+    .hero-slider .swiper-slide {
+        height: 500px;
+        /* Reduced height for mobile */
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    /* Hero Static */
+    .hero-static {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .hero-static img {
+        margin-top: 30px;
+    }
+
+    /* Buttons */
+    .btn {
+        width: 100%;
+        /* Full width buttons on mobile */
+        margin-bottom: 10px;
+        margin-right: 0 !important;
+    }
+
+    .d-flex.gap-3 {
+        flex-direction: column;
+    }
+
+    /* Projects Filter */
+    .filter-btn {
+        padding: 5px 15px;
+        font-size: 0.9rem;
+        margin: 2px;
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+    }
+}
+
+/* --- Small Mobile (Below 576px) --- */
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .project-slider {
+        height: 300px !important;
+        /* Smaller slider for project details */
+    }
+}

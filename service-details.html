@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Repair - RepairPro</title>
+    <!-- Fonts/CSS same as others -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    <button class="scroll-top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Navbar (Simplified) -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index-slider.html">Repair<span>Pro</span><i
+                    class="fas fa-wrench ms-2 text-warning"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"><span
+                    class="fas fa-bars"></span></button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="services.html">Back to Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header py-5 bg-light text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Smartphone Repair</h1>
+        </div>
+    </div>
+
+    <!-- Service Details -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="card border-0 shadow-sm p-4 sticky-lg-top" style="top: 100px;">
+                        <h4 class="mb-4">All Services</h4>
+                        <div class="list-group list-group-flush">
+                            <a href="#"
+                                class="list-group-item list-group-item-action active bg-primary border-primary text-white">Smartphone
+                                Repair</a>
+                            <a href="#" class="list-group-item list-group-item-action">Laptop Repair</a>
+                            <a href="#" class="list-group-item list-group-item-action">Tablets & iPads</a>
+                            <a href="#" class="list-group-item list-group-item-action">Game Consoles</a>
+                            <a href="#" class="list-group-item list-group-item-action">Data Recovery</a>
+                        </div>
+                        <div class="mt-5 text-center">
+                            <h5>Need Help?</h5>
+                            <p class="text-muted small">Call us for a free consultation</p>
+                            <a href="tel:+1234567890" class="btn btn-warning w-100 fw-bold"><i
+                                    class="fas fa-phone me-2"></i> +1 (123) 456-7890</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-lg-8" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded-4 mb-4 shadow-sm w-100" alt="Repair"
+                        style="max-height: 400px; object-fit: cover;">
+                    <h2 class="mb-3">Comprehensive Smartphone Repair</h2>
+                    <p class="text-muted mb-4">We specialize in repairing all major smartphone brands, including Apple
+                        iPhone, Samsung Galaxy, Google Pixel, and more. Our certified technicians use only high-quality
+                        parts to ensure your device functions like new.</p>
+
+                    <h4 class="mb-3">Common Issues We Fix</h4>
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i> Cracked Screen
+                                    Replacement</li>
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i> Battery Replacement</li>
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i> Charging Port Repair
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i> Water Damage Recovery
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i> Camera Lens Repair</li>
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i> Speaker & Mic Issues
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4 class="mb-3">Our Process</h4>
+                    <div class="accordion" id="processAccordion">
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne">
+                                    1. Diagnosis
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#processAccordion">
+                                <div class="accordion-body text-muted">
+                                    We run a full diagnostic test to identify the root cause of the issue. This is
+                                    usually free of charge.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    2. Repair Quote
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#processAccordion">
+                                <div class="accordion-body text-muted">
+                                    We provide a transparent price quote. Once approved, we begin the repair
+                                    immediately.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    3. Testing & Pickup
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#processAccordion">
+                                <div class="accordion-body text-muted">
+                                    After repair, we rigorously test the device to ensure everything works perfectly
+                                    before you pick it up.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center py-4">
+        <p class="mb-0">&copy; 2023 RepairPro. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
