@@ -427,9 +427,26 @@ img {
     box-shadow: var(--hover-shadow) !important;
 }
 
-.offcanvas {
-    background-color: #0B2B26 !important;
-    color: #ffffff !important;
+@media (max-width: 991.98px) {
+    .offcanvas {
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+    
+    .offcanvas-header {
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        padding: 1.5rem;
+    }
+
+    .offcanvas-body {
+        padding: 2rem;
+    }
+
+    .offcanvas .nav-link {
+        color: #fff !important;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
 }
 
 .offcanvas-header {
@@ -510,4 +527,18 @@ img {
 .offcanvas .dropdown-item:hover {
     background-color: transparent !important;
     color: #FFC107 !important;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .offcanvas {
+        background-color: transparent !important; 
+    }
+    
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem !important;
+    }
 }
